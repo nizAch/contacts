@@ -18,7 +18,7 @@ class ContactType extends AbstractType
             ->add('firstName')
             ->add('lastName')
             ->add('email', EmailType::class)
-            ->add('number', TelType::class)
+            ->add('phonenumber', TelType::class)
         ;
     }
 }

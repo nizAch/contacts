@@ -15,6 +15,7 @@
         <th>Nom</th>
         <th>Numéro</th>
         <th>Email</th>
+        <th>Modifier</th>
     </tr>
 </thead>
 <tbody>
@@ -24,6 +25,8 @@
         <td>{{ contact.lastname }}</td>
         <td>{{ contact.phonenumber }}</td>
         <td>{{ contact.email }}</td>
+        <td><a href="/contact/update?id={{contact.id}}"><input type="button" value="modifier" style="background-color:green"></td>
+        <td><a href="contact/update/delete?id={{contact.id}}"><input type="button" value="effacer" style="background-color:red"></td>
     </tr>
     {% endfor %}
 </tbody>

@@ -27,7 +27,7 @@ class ContactsController extends AbstractController
             $contact->setFirstname($contactFormData['firstName']);
             $contact->setLastname($contactFormData['lastName']);
             $contact->setEmail($contactFormData['email']);
-            $contact->setPhonenumber($contactFormData['number']);
+            $contact->setPhonenumber($contactFormData['phonenumber']);
 
             $entityManager->persist($contact);
             $entityManager->flush();
