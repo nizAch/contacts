@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Annuaire{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Bienvenue sur votre annuaire !</h1>
+</div>
+
+<table>
+<thead>
+    <tr>
+        <th>Prénom</th>
+        <th>Nom</th>
+        <th>Numéro</th>
+        <th>Email</th>
+    </tr>
+</thead>
+<tbody>
+    {% for contact in annuaire %}
+    <tr>
+        <td>{{ contact.firstname }}</td>
+        <td>{{ contact.lastname }}</td>
+        <td>{{ contact.phonenumber }}</td>
+        <td>{{ contact.email }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+
+
+{% endblock %}

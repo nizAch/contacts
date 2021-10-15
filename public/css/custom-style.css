@@ -1,0 +1,18 @@
+.main {
+    margin-top: 20px;
+}
+
+table {
+    border: 3px slategray;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 5px;
+    width: 10%;
+}
+
+table td {
+    padding: 5px;
+    width: 10%;
+}
